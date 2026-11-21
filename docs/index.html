@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e33">
+  <meta name="description" content="书籍人生 booklife 是一款开源的 iPad 阅读器。在书页旁记下想法，把人物、摘录和问题连成一张图。">
+  <title>书籍人生 · booklife</title>
+  <link rel="icon" href="images/booklife-icon.png">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header><nav aria-label="主导航">
+  <a class="brand" href="#top"><img src="images/booklife-icon.png" width="36" height="36" alt="">booklife</a>
+  <div><a href="#features">功能</a><a href="#start">开始使用</a><a lang="en" href="https://github.com/123bigmirros/booklife">GitHub ↗</a></div>
+</nav></header>
+<main id="top">
+  <section class="opening" aria-labelledby="intro">
+    <div class="hero">
+      <div class="intro"><h1 id="intro">书籍人生</h1>
+        <p class="deck">在书页旁记下想法，<br>把读到的线索连成图。</p>
+        <p class="about">一款为 iPad 设计的开源 EPUB 与 PDF 阅读器。用 Apple Pencil 在原文上做记号，随时回到那一段继续读。</p>
+        <a class="primary" href="#start">从源码运行 <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="film" id="demo">
+        <video controls playsinline preload="none" poster="images/booklife-companion.jpg" aria-label="书籍人生 iPad 横屏功能介绍，带中文字幕">
+          <source src="media/booklife-ipad-intro.mp4" type="video/mp4">
+          <a href="media/booklife-ipad-intro.mp4">打开演示视频</a>
+        </video>
+        <figcaption><span>iPad 横屏演示 · 34 秒</span><a href="media/booklife-ipad-intro.mp4" download>下载视频 ↓</a></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="features" class="features wrap" aria-labelledby="features-title">
+    <h2 id="features-title">一本书，两种视角</h2>
+    <div class="spread">
+      <article><img src="images/booklife-reader.jpg" loading="lazy" alt="原创示例书的横屏正文，排版保留宽阔的页边距"><h3>在原文上留一笔</h3><p>导入自己的 EPUB 或 PDF，选中文字即可高亮、摘录或翻译。手写标记保留原文位置，回看时能找到当时读到的地方。</p></article>
+      <article><img src="images/booklife-links.jpg" loading="lazy" alt="展开的人物节点与其他节点之间的连接"><h3>在节点间找联系</h3><p>在同一张卡片里写笔记、查看连接或向 AI 提问。长按节点，再点「添加」即可创建子节点，把新的想法接在上一条下面。</p></article>
+    </div>
+  </section>
+  <section id="start" class="start wrap" aria-labelledby="start-title">
+    <div><h2 id="start-title">在你的 iPad 上试读</h2>
+    <p>0.5.0 开发预览。使用配有完整 Xcode 26 或更高版本的 Mac，在终端运行以下命令。打开工程后选择 <code>booklifePhone</code> scheme 和 iPad 模拟器，按 ⌘R 运行。</p>
+    <a href="https://github.com/123bigmirros/booklife/blob/main/docs/guides/reading.md">阅读指南 ↗</a></div>
+    <pre aria-label="从 GitHub 获取源码并打开工程"><code>git clone https://github.com/123bigmirros/booklife.git
+cd booklife
+open booklife.xcodeproj</code></pre>
+  </section>
+</main>
+<footer class="wrap"><a class="brand" href="#top">booklife</a><div><a href="https://github.com/123bigmirros/booklife/blob/main/SECURITY.md">数据与隐私</a><a href="https://github.com/123bigmirros/booklife/blob/main/LICENSE">MIT License</a></div></footer>
+</body></html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src data: bookslide-ink:; connect-src 'none'; font-src 'self'">
+  <title>阅读结构图</title>
+  <link rel="stylesheet" href="vendor/MindElixir.css">
+  <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+  <div id="map" tabindex="0" aria-label="可编辑结构图"></div>
+  <div id="node-status" role="status" hidden></div>
+  <div id="drag-status" role="status" hidden></div>
+  <button id="cancel-link" hidden>取消连线</button>
+  <div id="connect" role="group" aria-label="填写节点关系" hidden>
+    <p id="connection-endpoints">
+      <span id="connection-from"></span>
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+      <span id="connection-to"></span>
+    </p>
+    <label>关系名称
+      <input id="relation" placeholder="例如：导致、属于、支持" maxlength="160" autocomplete="off">
+    </label>
+    <button id="save-connection" class="primary" disabled>确认连接</button>
+    <button id="cancel-connection">取消</button>
+  </div>
+  <div id="hint" role="status"></div>
+  <script type="module" src="canvas.js"></script>
+</body>
+</html>

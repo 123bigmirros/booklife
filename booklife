@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Developer}"
+cache_root="$HOME/Library/Caches/AppleProjectBuilds/book-slide"
+export BOOKSLIDE_MAC_APP="${BOOKSLIDE_MAC_APP:-$cache_root/mac/Build/Products/Debug/booklife.app}"
+xcrun swift build --package-path "$project_dir" --scratch-path "$cache_root/swift" --product booklife >&2
+exec "$cache_root/swift/debug/booklife" "$@"

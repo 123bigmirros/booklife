@@ -1,0 +1,5 @@
+BookSlide Serif is an offline WOFF2 conversion of Noto Serif SC, regular weight (400).
+Source: https://github.com/google/fonts/tree/main/ofl/notoserifsc
+Downloaded: 2026-09-28
+Converted with fontTools 4.60.2 instancer (wght=400) and WOFF2 compression.
+Copyright and license: ReadingSerif-OFL.txt (SIL Open Font License 1.1).
